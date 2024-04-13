@@ -7,25 +7,20 @@ font-family: "Lato", sans-serif;*/
     box-sizing: border-box;
     
 }
-
 header{
-    background-color: rgb(240, 235, 235);
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(240, 235, 235);
 }
-
 .header-index{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: lightgrey;
-    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.806);
+    background-color: rgb(205, 201, 201);
     align-items: center;
-}
-
-header a{
-    display: inline;
 }
 
 .navBar{
@@ -45,6 +40,11 @@ header a{
 .navBar li a:hover{
     color: aquamarine;
 }
+
+nav #toggle, nav label{
+    display: none;
+}
+
 ul{
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -288,19 +288,23 @@ p{
 @media(max-width:768px){
     .navBar{
         display: flex;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
         font-size: 10px;
         gap: 15px;
         margin-right: 60px;
-        
+        }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 8px 0;
     }
-    .header-index{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    nav label{
+        display: inline-flex;
     }
-    header a{
-        display: inline;
+    nav #toggle:checked ~ .navBar{
+        height: 100%;
     }
     .modelos-mas-valorados h1{
         font-size: 20px;
@@ -308,7 +312,7 @@ p{
     
     .img-modelos-mas-valor{
         width: 100%;
-        height: 400px;
+        height: 500px;
         background-position: center;
         background-size: 100% 100%;
         justify-content: center;
@@ -346,9 +350,42 @@ p{
     }
 }
 
-/* responsive 320px coleccion*/
+/* responsive 320px index */
 @media(max-width:320px){
     .header-index{
+        width: 100%;
+    }
+    .navBar{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+    }
+    nav label{
+        display: inline-flex;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .navBar{
+        height: 100%;
+    }
+    
+}
+
+/* responsive 320px coleccion*/
+@media(max-width:320px){
+    body{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .header-index{
+        width: 100%;
         flex-direction: column;
         
     }
