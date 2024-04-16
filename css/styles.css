@@ -226,7 +226,6 @@ p {
     transform: scale(1.1);
     filter: grayscale(1); }
 
-/* responsive 1024px index */
 @media (max-width: 1024px) {
   .navBar {
     font-size: 20px;
@@ -234,12 +233,11 @@ p {
     margin-right: 30px; }
   .img-modelos-mas-valor {
     align-items: center;
-    width: 1024px;
-    height: 500px; }
+    width: 100%;
+    height: 450px; }
   .img-modelos-mas-valor img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    height: 100%; }
   .cardIndex {
     width: 200px;
     height: 200px; }
@@ -255,7 +253,6 @@ p {
   .pie-pagina {
     font-size: 12px; } }
 
-/* responsive 768px index */
 @media (max-width: 768px) {
   .header-index {
     width: 100%;
@@ -282,8 +279,9 @@ p {
   .modelos-mas-valorados h1 {
     font-size: 20px; }
   .img-modelos-mas-valor {
+    display: flex;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-position: center;
     background-size: 100% 100%;
     justify-content: center; }
@@ -352,7 +350,7 @@ p {
     font-size: 10px; }
   .img-modelos-mas-valor {
     width: 100%;
-    height: 200px;
+    height: 180px;
     overflow: hidden; }
   .img-modelos-mas-valor img {
     width: 100%;
@@ -360,7 +358,7 @@ p {
     object-fit: cover; }
   .cardIndex {
     width: 100%;
-    height: 300px; }
+    height: 280px; }
   /* responsive 320px coleccion*/
   body {
     width: 100%;

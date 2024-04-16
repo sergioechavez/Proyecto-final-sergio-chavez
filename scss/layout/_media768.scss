@@ -1,0 +1,73 @@
+@media(max-width:768px){
+    .header-index{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .navBar{
+        display: flex;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        font-size: 10px;
+        gap: 15px;
+        margin-right: 60px;
+        }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 8px 0;
+    }
+    nav label{
+        display: inline-flex;
+    }
+    nav #toggle:checked ~ .navBar{
+        height: 100%;
+    }
+    .modelos-mas-valorados h1{
+        font-size: 20px;
+    }
+    
+    .img-modelos-mas-valor{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: 100% 100%;
+        justify-content: center;
+    }
+    .cardIndex{
+        width: 150px;
+        height: 150px;
+        justify-content: center;
+    }
+    .coleccion{
+        width: 240px;
+        height: 240px
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .redes-sociales{
+        flex-wrap: nowrap;
+        gap: .125rem;
+    }
+    .seguinos{
+        font-size: 10px;
+    }
+    .logoMap{
+        width: 30px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .pie-pagina{
+        font-size: 10px;
+    }
+    
+}
