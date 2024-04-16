@@ -1,0 +1,80 @@
+footer{
+    background-color: $background-color-main;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.contactos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+}
+
+.redes-sociales li {
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.redes-sociales li a img {
+    width: 25px;
+    height: 25px;
+}
+.seguinos{
+    display: flex;
+    font-size: map-get($fuentes, pie-pagina );
+    text-transform: initial;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 25px;
+    font-family: "Lato", sans-serif;
+}
+
+.direccion-suc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    font-size: map-get($fuentes, pie-pagina );
+    flex-direction: row;
+    
+}
+
+p{
+    color: map-get($colores, parrafo );
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.pie-pagina{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+            a{
+            text-decoration: none;
+            color: $color-fuente-principal;
+            font-size: map-get($fuentes, pie-pagina );
+            font-family: "Lato", sans-serif;
+            }
+    
+}

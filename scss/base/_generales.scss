@@ -1,0 +1,31 @@
+ul{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:map-get($fuentes, titulos-secundario );
+    font-weight: 300px;
+    padding:5px 5px 20px 5px;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: map-get($colores , letras-principales );
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 100px;
+    width: 100%;
+    padding:10px 5px 0px 5px;
+    background-position: center;
+    
+}
+h2{
+    color: map-get($colores , letras-secundarias );
+    font-family: "Lato", sans-serif;
+    font-size: map-get($fuentes, titulos-secundario );
+    font-weight: 400;
+    padding: 10px 5px 0px 5px;
+    text-align: center;
+}
