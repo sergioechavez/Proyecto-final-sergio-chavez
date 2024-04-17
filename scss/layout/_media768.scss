@@ -33,10 +33,16 @@
     .img-modelos-mas-valor{
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 450px;
         background-position: center;
         background-size: 100% 100%;
         justify-content: center;
+    }
+    .img-modelos-mas-valor img{
+        
+        width: 100%;
+        height: 100%;
+        
     }
     .cardIndex{
         width: 150px;

@@ -184,7 +184,10 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow: hidden; }
+  .planes-finan .parrafoIndex {
+    width: 100%; }
 
 /* grid deportivo autos */
 .grid-conteiner {
@@ -226,6 +229,20 @@ p {
     transform: scale(1.1);
     filter: grayscale(1); }
 
+.cotizar {
+  display: flex;
+  color: #3339b6;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px 10px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 15px;
+  background-color: #d7c9c9;
+  margin: 10px; }
+
 @media (max-width: 1024px) {
   .navBar {
     font-size: 20px;
@@ -234,7 +251,7 @@ p {
   .img-modelos-mas-valor {
     align-items: center;
     width: 100%;
-    height: 450px; }
+    height: 500px; }
   .img-modelos-mas-valor img {
     width: 100%;
     height: 100%; }
@@ -281,10 +298,13 @@ p {
   .img-modelos-mas-valor {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-position: center;
     background-size: 100% 100%;
     justify-content: center; }
+  .img-modelos-mas-valor img {
+    width: 100%;
+    height: 100%; }
   .cardIndex {
     width: 150px;
     height: 150px;
