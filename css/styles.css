@@ -45,7 +45,7 @@ header {
   align-items: center;
   gap: none;
   width: 100%;
-  background-color: #d7c9c9; }
+  background-color: #e6dede; }
   header .header-index {
     display: flex;
     flex-direction: wrap;
@@ -58,24 +58,30 @@ header {
   flex-direction: none;
   justify-content: space-around;
   align-items: none;
-  gap: 3.75rem;
+  gap: 2.5rem;
   list-style: none;
-  margin-right: 60px;
+  margin-right: 40px;
   font-size: 1.5rem;
   margin: 0;
   padding: 0; }
   .navBar li a {
     color: #41b1e9;
     text-decoration: none;
-    margin-right: 20px; }
+    margin-right: 10px; }
     .navBar li a:hover {
-      color: #7ff2ff; }
+      color: #109dac; }
 
 nav #toggle, nav label {
   display: none; }
 
 main {
-  background-color: #c2e3f7; }
+  background-color: #f2f4f5; }
+  main .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: none; }
 
 .modelos-mas-valorados h1 {
   font-size: 2rem; }
@@ -83,20 +89,35 @@ main {
 .img-modelos-mas-valor {
   display: flex;
   width: 100%;
-  height: 500px;
-  display: 100%;
-  margin: 0px;
-  text-align: center;
+  height: 800px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 2px 2px 5px gray;
+  background-image: url(/assets/img/modelos-mas-valorados.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  justify-content: center; }
+  padding-left: 14%; }
+  .img-modelos-mas-valor p {
+    color: #3339b6;
+    font-size: 48px;
+    text-shadow: 1px 1px 4px rgba(101, 70, 203, 0.264); }
+  .img-modelos-mas-valor button {
+    padding: 5px 30px;
+    background-color: white;
+    box-shadow: 2px 2px 4px #403d3d;
+    border-radius: 15px;
+    border: none; }
+    .img-modelos-mas-valor button:hover {
+      transform: scale(1.1); }
+  .img-modelos-mas-valor a {
+    text-decoration: none;
+    color: #3339b6;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem; }
 
 footer {
-  background-color: #c2e3f7;
+  background-color: #e6dede;
   flex-direction: row;
   align-items: center;
   padding: 20px;
@@ -160,7 +181,7 @@ p {
   justify-content: space-around; }
   .pie-pagina a {
     text-decoration: none;
-    color: #1b94d1;
+    color: #1f95f0;
     font-family: "Lato", sans-serif; }
 
 /*components*/
@@ -175,19 +196,19 @@ p {
   box-shadow: 2px 2px 5px gray;
   justify-content: center; }
 
+.card-description {
+  width: 300px; }
+
 .cardIndex img {
   width: 100%;
   height: 100%; }
 
 .planes-finan {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   overflow: hidden; }
-  .planes-finan .parrafoIndex {
-    width: 100%; }
 
 /* grid deportivo autos */
 .grid-conteiner {
@@ -240,8 +261,10 @@ p {
   text-decoration: none;
   box-shadow: 2px 2px 5px gray;
   border-radius: 15px;
-  background-color: #d7c9c9;
+  background-color: #e6dede;
   margin: 10px; }
+  .cotizar:hover {
+    transform: scale(1.1); }
 
 @media (max-width: 1024px) {
   .navBar {

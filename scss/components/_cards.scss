@@ -8,7 +8,12 @@
     overflow: hidden;
     box-shadow: 2px 2px 5px gray;
     justify-content: center
+    
 }
+.card-description{
+    width: 300px;
+}
+
 
 .cardIndex img{
     width: 100%;
@@ -17,15 +22,11 @@
 
 .planes-finan{
     display: flex;
-    flex-direction: row;
+    
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow: hidden;
-    .parrafoIndex{
-        width: 100%;
-        
-    }
 }
 
 
@@ -90,6 +91,9 @@
         border-radius: 15px;
         background-color: map-get($colores, fondo-header );
         margin: 10px;
+        &:hover{
+            transform: scale(1.1);
+        }
        
     }
     
