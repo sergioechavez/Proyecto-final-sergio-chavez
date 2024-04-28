@@ -464,7 +464,9 @@ p {
     overflow: hidden; }
     .img-modelos-mas-valor p {
       font-size: 10px;
-      padding-top: 10%; }
+      padding-top: 10%;
+      position: relative;
+      bottom: 60px; }
     .img-modelos-mas-valor .button {
       display: none; }
   .img-modelos-mas-valor img {
