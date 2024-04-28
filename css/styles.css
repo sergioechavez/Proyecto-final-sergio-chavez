@@ -137,10 +137,6 @@ main {
   opacity: 1;
   filter: contrast(120%); }
 
-.carruselPick {
-  width: 100%;
-  height: auto; }
-
 footer {
   background-color: #e6dede;
   flex-direction: row;
@@ -417,6 +413,16 @@ p {
   .pie-pagina {
     font-size: 10px; }
   .galeria-autos {
+    display: none; }
+  .videos {
+    display: flex;
+    justify-content: center; }
+    .videos .videoElect {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 250px; }
+  .pronto {
     display: none; } }
 
 @media (max-width: 320px) {

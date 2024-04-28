@@ -92,5 +92,18 @@
     .galeria-autos{
         display: none;
     }
+    .videos{
+        display: flex;
+        justify-content: center;
+        .videoElect{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 250px;
+        }
+    }
+    .pronto{
+        display: none;
+    }
 }
 
