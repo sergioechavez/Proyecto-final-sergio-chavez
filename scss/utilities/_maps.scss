@@ -1,14 +1,14 @@
 $colores:(
-    fondo-header: rgb(230, 222, 222),
+    fondo-header: rgba(230, 222, 222, 0.592),
     fondo-main: rgb(242, 244, 245),
-    fondo-footer: rgb(226, 216, 216),
-    letras-principales: #41b1e9,
+    fondo-footer: rgba(230, 222, 222, 0.592),
+    letras-principales: #0a82bf,
     letras-secundarias: rgb(51, 57, 182),
-    hover: rgb(16, 157, 172),
+    hover: rgb(5, 63, 53),
     parrafo: black,
 );
 $fuentes:(
-    titulos: 2rem,
-    titulos-secundario: 1.5rem,
+    titulos: 1.75rem,
+    titulos-secundario: 1.25rem,
     titulos-footer: .9375rem,
 );

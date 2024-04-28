@@ -1,4 +1,4 @@
-@media(max-width:320px){
+@media (max-width:320px){
     .header-index{
         width: 100%;
         flex-direction: column;
@@ -47,10 +47,7 @@
     .direccion-suc p{
     font-size: 10px;
     }
-    
-    
-    
-    /* responsive 320px index */
+
     .modelos-mas-valorados h1{
         font-size: 10px;
     }
@@ -59,16 +56,43 @@
         width: 100%;
         height: 180px;
         overflow: hidden;
+        p{
+            font-size: 10px;
+            padding-top: 10%;
+        }
+        .button{
+        display: none;
+        }
     }
     .img-modelos-mas-valor img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+
     }
-    
+    .planes-finan{
+        p{
+            display: none;
+        }
+    }
     .cardIndex{
     width: 100%;
     height: 280px;
+    margin: 0px;
+    }
+    .botones{
+        font-size: 15px;
+        
+    }
+    .videos{
+        display: flex;
+        justify-content: center;
+        .videoElect{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 250px;
+        }
     }
     
     /* responsive 320px coleccion*/
@@ -89,4 +113,6 @@
     height: 100%;
     object-fit: cover;
 }
+
 }
+

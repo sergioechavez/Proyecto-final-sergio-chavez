@@ -1,51 +1,63 @@
 .cardIndex{
-    margin: 20px;
-    width: 300px;
-    height: 300px;
+    margin: 10px;
+    width: 280px;
+    height: 280px;
     font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 2px 2px 5px gray;
-    justify-content: center
+    justify-content: center;
     
+}
+.botones{
+    display: flex;
+        color: map-get($colores , letras-secundarias );
+        font-family: "Lato", sans-serif;
+        font-size: map-get($fuentes, titulos-secundario );
+        font-weight: 300px;
+        padding: 10px 10px 5px 5px;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 2px 2px 5px gray;
+        border-radius: 15px;
+        background-color: map-get($colores, fondo-header );
+        margin: 10px;
+        &:hover{
+            transform: scale(1.1);
+        }
 }
 .card-description{
     width: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .cardIndex img{
     width: 100%;
     height: 100%;
+    margin-top: 10px;
 }
 
 .planes-finan{
     display: flex;
-    
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     overflow: hidden;
-}
-
-
-/* grid deportivo autos */
-.grid-conteiner{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    justify-content: center;
-    justify-items: center;
-    
-}
+    align-items: center;
+    margin-top: 20px;
+   
+    }
 .sectionColeccion{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     overflow: hidden;
     
 }
@@ -53,7 +65,8 @@
 .card-img{
     width: 100%;
     height: 100%;
-    display: block;
+    object-fit: cover;
+    
 }
 
 
@@ -66,14 +79,19 @@
     box-shadow: 2px 2px 5px gray;
     background-size: 100% 100%;
     margin: 2px;
+    &:hover{
+        box-shadow:5px 10px 10px 10px rgba(154, 208, 193, 0.886);
+        border-radius: 0px;
+    }
 }
 
 .imag-coleccion{
     width: 100%;
     height: 100%;
-    display: block;
+    object-fit: cover;
+    
         &:hover{
-            transform: scale(1.1);
+            transform: scale(1.0);
             filter: grayscale(1);
         }
     }
@@ -83,7 +101,7 @@
         color: map-get($colores , letras-secundarias );
         font-family: "Lato", sans-serif;
         font-size: map-get($fuentes, titulos-secundario );
-        font-weight: 400;
+        font-weight: 400px;
         padding: 10px 10px 5px 5px;
         text-align: center;
         text-decoration: none;
@@ -96,4 +114,3 @@
         }
        
     }
-    

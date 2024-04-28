@@ -1,4 +1,4 @@
-@media(max-width:768px){
+@media (max-width:768px){
     .header-index{
         width: 100%;
         flex-direction: column;
@@ -49,6 +49,20 @@
         height: 150px;
         justify-content: center;
     }
+    .botones{
+        width: 150px;
+        height: 40px;
+    
+    }
+    .videos{
+        display: flex;
+        justify-content: center;
+    }
+    .videoElect{
+        display: flex;
+        width: 300px;
+
+    }
     .coleccion{
         width: 240px;
         height: 240px
@@ -75,5 +89,8 @@
     .pie-pagina{
         font-size: 10px;
     }
-    
+    .galeria-autos{
+        display: none;
+    }
 }
+

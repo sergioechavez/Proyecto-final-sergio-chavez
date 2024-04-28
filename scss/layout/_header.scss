@@ -1,19 +1,25 @@
+
 header{
+    position: sticky;
+    top: 0px;
     @include flex (row, space-between, center, none);
     width: 100%;
     background-color: map-get($colores, fondo-header );
         .header-index{
             @include flex (wrap, space-between, center, none);
+            
 }
 }
 
+
 .navBar{
-    @include flex (none, space-around, none, 2.5rem);
+    @include flex (none, space-around, none, 1.25rem);
     list-style: none;
     margin-right: 40px;
     font-size: map-get($fuentes, titulos-secundario );
     margin: 0;
     padding: 0;
+    
         li a{
             color: map-get($colores, letras-principales);
             text-decoration: none;
